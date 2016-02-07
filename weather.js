@@ -246,9 +246,9 @@ $(function() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-    var td = weekday[d.getDay()];
+    var td = d.getDay();
 
-    if (d == 6) {
+    if (td == 6) {
       var tm = weekday[0];
       var tmnum = 0;
     }
