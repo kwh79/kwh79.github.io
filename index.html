@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Weather Report</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="weather.js"></script>
+  <head>
+    <title>Kyle Hughes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
 
-</head>
-<body>
-  <div class="container">
-    <h3><a href="#" class="btn btn-primary get-the-weather">Get current Chicago weather and three-day forecast!</a></h3>
+  <body>
 
-  <table class="table" style="width: auto">
-    <tr>
-      <td class="current"></td>
-      <td class="weather-report"></td>
-      <td class="weather-icon"></td>
-    </tr>
-    <tr>
-      <td class ="td-date"></td>
-      <td class="td-report"></td>
-      <td class="td-icon"></td>
-    </tr>
-    <tr>
-      <td class ="tm-date"></td>
-      <td class="tm-report"></td>
-      <td class="tm-icon"></td>
-    </tr>
-    <tr>
-      <td class ="da-date"></td>
-      <td class="da-report"></td>
-      <td class="da-icon"></td>
-    </tr>
-    <tr>
-      <td class ="d3-date"></td>
-      <td class="d3-report"></td>
-      <td class="d3-icon"></td>
-    </tr>
-  </table>
+  <nav class="navbar navbar-default navbar-sticky-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Kyle Hughes</a>
+      </div>
 
-  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="summary.html">Who Am I? <span class="sr-only">(current)</span></a></li>
+          <li><a href="Travel.html">My Travel</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="navbar-brand" href="index.html">Take me home!</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-</body>
+  <img src="vinyl.jpg" class="img-fluid" alt="I heart the New Yorker"></img>
+
+    <footer class="footer">
+      <div class="container">
+        <hr>
+        <div class="row vertalign">
+          <div class="col-sm-3">
+            <h2>Contact Me:</h2>
+          </div>
+            <div class="col-sm-9 footer-buttons">
+              <a class="btn btn-default btn-sm btn-block" href="https://www.instagram.com/analog_rhombus/"><strong><i class="fa fa-instagram"></i>Instagram</strong></a>
+              <a class="btn btn-default btn-sm btn-block" href="https://www.facebook.com/analogrhombus"><strong><span class="fa fa-instagram"></span>Facebook</strong></a>
+        </div>
+      </div>
+        </div>
+    </footer>
+
+
+  </body>
 </html>
