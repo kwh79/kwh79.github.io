@@ -1,5 +1,6 @@
 body {
   padding-top: 20px;
+  /*background-color: #b2cecf;*/
 }
 
 .footer {
@@ -9,14 +10,19 @@ body {
   border-top: 2px solid #eee;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   background-color: transparent;
+  margin-bottom: 0px;
+  background-image: url(img/vinyl.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #003399;
 }
 .jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+  padding: 8px 16px;
+  font-size: 16px;
 }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
@@ -92,11 +98,11 @@ body {
   font-size: 14px;
 }
 
-.travel {
+.pics {
   padding-top: 20px;
 }
 
-.row {
+.container {
   font-family: 'Molengo', Georgia, Times, serif;
   font-size: 14px;
 }
