@@ -11,18 +11,17 @@ $(document).ready(function() {
 
 function addItem() {
   var text = window.prompt("Add New Record to the List");
-  var ebay_search = '<a href="http://www.ebay.com/sch/i.html?_ssn=&_sop=12&_nkw=">(Search eBay)</a>'
   var delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   // console.log("Yup!");
-  $("ol").append("<li>" + text + " " + ebay_search + " " + delete_link + "</li>");
-  var numItems = $("li").length;
+  $("ol").append("<li>" + text + " " + delete_link + "</li>");
+  var numItems = $("li").length - 5;
 
   // Challenge: Differentiate between 1 item vs. more items
   if (numItems == 1) {
-    $(".total").html(numItems + " item");
+    $(".total").html(numItems + " record");
   }
   else {
-    $(".total").html(numItems + " items");
+    $(".total").html(numItems + " records");
   }
 }
 
@@ -40,7 +39,13 @@ function sre() {
 // item the user wishes to remove.
 function deleteItem(event) {
   console.info(event);
-  // $(event.target).remove();
-  $(event.target).parent().fadeOut();
-
+  $(event.target).parent().remove();
+  var numItems = $("li").length - 5;
+  $(".total").html(numItems + " records");
+  if (numItems == 1) {
+      $(".total").html(numItems + " record");
+  }
+  else {
+      $(".total").html(numItems + " records");
+  }
 }

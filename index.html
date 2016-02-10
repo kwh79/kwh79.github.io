@@ -15,7 +15,12 @@
     <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/weather.js"></script>
 
   </head>
 
@@ -49,16 +54,57 @@
           <div class="span6">
             <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://player.vimeo.com/video/38449496" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    </div>
-    </div>
+            </div>
+          </div>
+        </div>
+      <div class="row weather-app">
+        <div class="col-sm-5 text-right">
+          <h5><strong>Current Chicago weather and three-day forecast:</strong></h5>
+        </div>
+        <div class="col-sm-7">
+          <table class="table" style="width: auto">
+            <tr>
+              <td class="current"></td>
+              <td class="weather-report"></td>
+              <td class="weather-icon"></td>
+            </tr>
+            <tr>
+              <td class ="td-date"></td>
+              <td class="td-report"></td>
+              <td class="td-icon"></td>
+            </tr>
+            <tr>
+              <td class ="tm-date"></td>
+              <td class="tm-report"></td>
+              <td class="tm-icon"></td>
+            </tr>
+            <tr>
+              <td class ="da-date"></td>
+              <td class="da-report"></td>
+              <td class="da-icon"></td>
+            </tr>
+            <tr>
+              <td class ="d3-date"></td>
+              <td class="d3-report"></td>
+              <td class="d3-icon"></td>
+            </tr>
+          </table>
+        </div>
+
     </div>
 
 
-      <footer class="footer footerfont">
-        <p><a href="https://www.instagram.com/analog_rhombus/"><i class="fa fa-instagram fa-fw"></i>Instagram</a></p>
-        <p><a href="https://www.facebook.com/analogrhombus"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a></p>
-        <p>Video Source: <a href="https://player.vimeo.com/video/38449496">Submerged Turntable</a> from <a href="https://vimeo.com/brianlilla">Brian Lilla</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      <footer class="footer">
+        <div class="row">
+          <div class="col-sm-8">
+            <p><a href="https://www.instagram.com/analog_rhombus/"><span class="fa fa-instagram fa-fw"></span>Instagram</a></p>
+            <p><a href="https://www.facebook.com/analogrhombus"><span class="fa fa-facebook-square fa-fw"></span>Facebook</a></p>
+            <p>Video Source: <a href="https://player.vimeo.com/video/38449496">Submerged Turntable</a> from <a href="https://vimeo.com/brianlilla">Brian Lilla</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+          </div>
+          <div class="col-sm-4 text-right">
+            <p><b>Current Chicago Weather: </b><span class="footer-report"></span><span class="footer-icon"></span></p>
+          </div>
+        </div>
       </footer>
 
     </div>
