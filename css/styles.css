@@ -95,3 +95,8 @@ body {
 .travel {
   padding-top: 20px;
 }
+
+.row {
+  font-family: 'Molengo', Georgia, Times, serif;
+  font-size: 14px;
+}
